@@ -2,27 +2,30 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style_lowWidth.css">
 	<link rel="stylesheet" href="styles.css">
-	<title>Spirit Phone Album Generator</title>
-	<link rel="icon" href="spiritPhoneBackground.png" sizes="900x900">
+	<title>NZ COVID QR Generator</title>
 </head>
 <body>
-	<img id="spiritPhoneBackground" src="spiritPhoneBackground.png" style="display:none">
-	<div class="album">
-		<canvas id="generatedImage" width="1449" height="2048"></canvas>
+	<img src="qrcode.png" style="display:none">
+	<img src="header.png" style="display:none">
+	<div id="info">
+		<a href="https://twitter.com/stick_twt">@stick_twt</a>
+		<a href="https://github.com/sticks-stuff/NZ-Covid-QR-Code-Generator">source</a>
+	</div>
+	<div class="wrapper">
 		<div class="input">
 			<label for="opn">Place or Activity:</label>
-			<input type="text" id="opn" name="opn" value="Spirit Phone"><br><br>
+			<input type="text" id="opn" name="opn" value="COVID Test Location"><br><br>
 			<label for="gln">Global location number (GLN):</label>
-			<input type="text" id="gln" name="gln" value="Lemon Demon"><br><br>
+			<input type="text" id="gln" name="gln" value="0000000000000"><br><br>
 			<label for="adr">Address:</label>
-			<input type="text" id="adr" name="adr" value="Lemon Demon"><br><br>
+			<input type="text" id="adr" name="adr" value="123 Test Street\nTest Suburb\nCity"><br><br>
 			<label for="ver">Version:</label>
-			<input type="text" id="ver" name="ver" value="Spirit Phone"><br><br>
+			<input type="text" id="ver" name="ver" value="c19:1"><br><br>
 			<label for="typ">Type:</label>
-			<input type="text" id="typ" name="typ" value="Spirit Phone"><br><br>
+			<input type="text" id="typ" name="typ" value="entry"><br><br>
 		</div>
+		<canvas id="generatedImage" width="1449" height="2048"></canvas>
 	</div>
 	<script src="https://unpkg.com/qrcode@1.4.4/build/qrcode.min.js"></script> 
 	<script src="scripts.js"></script> 
