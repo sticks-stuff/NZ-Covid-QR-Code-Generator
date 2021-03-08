@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style_lowWidth.css">
+	<link rel="stylesheet" href="styles.css">
+	<title>Spirit Phone Album Generator</title>
+	<link rel="icon" href="spiritPhoneBackground.png" sizes="900x900">
+</head>
+<body>
+	<img id="spiritPhoneBackground" src="spiritPhoneBackground.png" style="display:none">
+	<div class="album">
+		<canvas id="generatedImage" width="1449" height="2048"></canvas>
+		<div class="input">
+			<label for="fname">Top Text:</label>
+			<input type="text" id="toptext" name="toptext" value="Lemon Demon"><br><br>
+			<label for="lname">Bottom Text:</label>
+			<input type="text" id="bottomtext" name="bottomtext" value="Spirit Phone"><br><br>
+		</div>
+	</div>
+	<script src="https://unpkg.com/qrcode@1.4.4/build/qrcode.min.js"></script> 
+	<script src="scripts.js"></script> 
+</body>
+</html>
