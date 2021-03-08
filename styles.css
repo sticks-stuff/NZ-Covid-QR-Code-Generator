@@ -84,4 +84,15 @@
 	  left: 10px;
 	  height: auto;
 	  width: auto;
+	  font-family: "PNS";
+	  color: aliceblue;
+	  font-size: 1em;
+  }
+
+  a {
+	  color: aqua;
+  }
+
+  a:visited {
+	  color: pink;
   }
